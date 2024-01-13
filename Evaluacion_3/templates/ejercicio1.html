@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio1</title>
+     <link rel="stylesheet" type="text/css" href="/static/css/estiloEjerccicio1.css">
+</head>
+<body>
+<div class="container">
+    <h1>Formulario de Notas</h1>
+    <form method="post" action="/ejercicio1" >
+        <label for="nota1">Nota 1:</label><br><br>
+        <input type="number" id="nota1" name="nota1" required>
+        <br><br>
+        <label for="nota2">Nota 2: </label><br><br>
+        <input type="number" id="nota2" name="nota2" required>
+        <br><br>
+        <label for="nota3">Nota 3: </label><br><br>
+        <input type="number" id="nota3" name="nota3" required>
+        <br><br>
+        <label for='asistencia'>Asistencia(%):</label>
+        <br><br>
+        <input type="number" id='asistencia' name='asistencia'><br><br><br>
+        <button type="submit">Calcular</button>
+    </form>
+    <div>
+       <p> {{promedio}}</p>
+        <p> {{estado}}</p>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+

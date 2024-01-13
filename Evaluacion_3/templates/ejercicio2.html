@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio2</title>
+     <link rel="stylesheet" type="text/css" href="/static/css/estiloEjercicio2.css">
+</head>
+<body>
+<div class="container">
+    <h1></h1>
+    <form method="post" action="/ejercicio2" >
+        <label for="nombre1">Nombre 1:</label><br><br>
+        <input type="text" id="nombre1" name="nombre1" required>
+        <br><br>
+        <label for="nombre2">Nombre 2: </label><br><br>
+        <input type="text" id="nombre2" name="nombre2" required>
+        <br><br>
+        <label for="nombre3">Nombre 3: </label><br><br>
+        <input type="text" id="nombre3" name="nombre3" required>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+         {% if nombre1, nombre2 and nombre3%}
+             <h1> El nombre con mayor cantidad de caracteres es: {{maximo}}</h1>
+                 <h1> El nombre tiene: {{contador}} caracteres</h1>
+
+          {%else%}
+               <h1> Llene todos los campos</h1>
+          {% endif%}
+
+</div>
+</body>
+</html>
+
